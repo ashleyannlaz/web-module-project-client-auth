@@ -7,6 +7,8 @@ const initialFriends = []
 function FriendsList() {
     const [ friends, setFriends ] = useState(initialFriends);
 
+    
+
     const handleClick = () => {
         axiosWithAuth().get('/friends')
         .then( res => {
